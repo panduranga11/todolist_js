@@ -1,0 +1,97 @@
+
+#title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img6.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+
+#todo_input,
+#tododate {
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+.bun_todo {
+    background-color: rgb(26, 223, 56);
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.bun_todo:hover {
+    background-color: rgb(20, 180, 46);
+}
+
+
+.todo_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.bun_delete {
+    background-color: rgb(152, 13, 13);
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.bun_delete:hover {
+    background-color: rgb(180, 20, 20);
+}
+
+
+@media screen and (max-width: 600px) {
+    .grid_container {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #todo_input,
+    #tododate,
+    .bun_todo {
+        width: 100%
+    }
+}
